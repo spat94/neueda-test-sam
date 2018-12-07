@@ -57,7 +57,7 @@ public class Whale extends Animal {
 	
 	public String toString() //Overrides toString method and returns all properties of whale object as a string when called against whale object
 	{
-		return mainOcean + weight + maxSpeed + length;
+		return "Name: " + getName() + " Main Ocean: " +  mainOcean + " Weight: " + weight + " Max Speed: " + maxSpeed + " Length: " + length + "\n";
 	}
 
 }

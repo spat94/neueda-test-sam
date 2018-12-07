@@ -1,6 +1,7 @@
 package com.example;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class WhaleWatcher {
 
@@ -18,7 +19,16 @@ public class WhaleWatcher {
 		whaleList.add(sperm);
 		whaleList.add(humpback); //each whale object is stored in whaleList arraylist
 		
-
+			System.out.println(whaleList.toString()); //calls overridden toString method from Whale class to output details of all whales in whaleList
+		
+		for(int i = 0; i < whaleList.size(); i++)
+		{
+			if("Atlantic".equals(whale.getMainOcean())) //logic here is to iterate through arraylist and pull out objects for which "main ocean"
+														//is "Atlantic" but unsure how- what's here won't work as method can't be called without referring to specific object"
+					{
+						return;
+					}
+		}
 	}
 
 }
